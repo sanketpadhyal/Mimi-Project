@@ -36,6 +36,20 @@ Mimi also gives each person a **Moji** profile character. It keeps profiles frie
 
 The app is being built step by step. The first goal is a dependable mobile experience for chat, calls, notifications, profiles, privacy controls, and account settings.
 
+## App Preview
+
+<p align="center">
+  <img src="demo-images/1.png" alt="Mimi app preview 1" width="30%" />
+  <img src="demo-images/2.png" alt="Mimi app preview 2" width="30%" />
+  <img src="demo-images/3.png" alt="Mimi app preview 3" width="30%" />
+</p>
+
+<p align="center">
+  <img src="demo-images/4.png" alt="Mimi app preview 4" width="30%" />
+  <img src="demo-images/5.png" alt="Mimi app preview 5" width="30%" />
+  <img src="demo-images/6.png" alt="Mimi app preview 6" width="30%" />
+</p>
+
 ## Download Mimi
 
 The newest Early Access build is available on the [latest release page](../../releases/latest).
