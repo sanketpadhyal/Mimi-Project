@@ -1,7 +1,6 @@
 <p align="center">
   <img src="iconn.png" alt="iClora logo" width="96" />
 </p>
-
 <h1 align="center">Mimi</h1>
 
 <p align="center">
