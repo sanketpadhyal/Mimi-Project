@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="[../../releases/latest](https://github.com/sanketpadhyal/Mimi-Project/releases/download/v0.1.0-alpha/mimi-early-access-v0.1.0.apk)"><strong>Download Early Access</strong></a>
+<a href="https://github.com/sanketpadhyal/Mimi-Project/releases/download/v0.1.0-alpha/mimi-early-access-v0.1.0.apk"><strong>Download Early Access</strong></a>
   &nbsp;&middot;&nbsp;
   <a href="../../releases">All Releases</a>
   &nbsp;&middot;&nbsp;
