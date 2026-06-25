@@ -34,6 +34,8 @@ Mimi is a one-to-one messaging app for everyday conversations. You can find peop
 
 Mimi also gives each person a **Moji** profile character. It keeps profiles friendly and easy to recognize without asking everyone to upload a personal photo.
 
+Mimi includes **Personal Cloud**, a private chat with yourself for saving notes, links, photos, videos, documents, and other files. It appears with the rest of your chats when it has content, and it can also be opened from the dashboard Cloud shortcut.
+
 The app is being built step by step. The first goal is a dependable mobile experience for chat, calls, notifications, profiles, privacy controls, and account settings.
 
 ## App Preview
@@ -67,6 +69,7 @@ Early Access is meant for testing and feedback. It is not the final public relea
 ### Chat
 
 - Start a private one-to-one chat by searching for a Mimi username.
+- Message yourself in Personal Cloud to save notes, links, documents, media, and reminders.
 - Send text, photos, videos, documents, and other files.
 - Record and play voice messages.
 - Send several photos or videos together.
@@ -77,13 +80,17 @@ Early Access is meant for testing and feedback. It is not the final public relea
 - See sent, delivered, and read states.
 - See online, last-seen, typing, recording, and upload activity when privacy settings allow it.
 - Pin, mute, search, and remove conversations.
-- Share text or files from another Android app into Mimi.
+- Search chats, message text, usernames, global people, and Personal Cloud from one search screen.
+- Share text, photos, videos, documents, and other files from another Android app into Mimi.
+- Open shared items directly in Mimi without waiting through the startup splash.
+- Select a photo or document and add a caption only when you tap the message field.
 
 ### Voice Calls
 
 - Make and receive one-to-one voice calls.
-- Answer or decline an incoming call from its notification.
+- Answer, decline, join, or return to a call from its notification.
 - Mute the microphone or use the speaker during a call.
+- Keep navigating Mimi while a call is active with reduced call-screen overhead.
 - See recent, missed, declined, and completed calls.
 - Remove call history for yourself or for both people.
 - Choose who is allowed to call you.
@@ -92,13 +99,15 @@ Early Access is meant for testing and feedback. It is not the final public relea
 
 - Receive alerts for new messages and incoming calls.
 - Reply to a message or mark it as seen from the notification.
-- Open the correct chat or call directly from an alert.
+- Open the correct chat or call directly from an alert without replaying the startup splash.
+- Keep an ongoing-call notification available while the call is active.
 - Turn message alerts, call alerts, previews, and sounds on or off.
 - Mute one conversation without changing alerts for every chat.
 
 ### Profile And Privacy
 
 - Sign in with a Google account.
+- Sign in faster with passkeys on supported devices.
 - Choose a name and a unique `@username`.
 - Pick one of Mimi's Moji profile characters.
 - Add a short bio.
@@ -106,6 +115,7 @@ Early Access is meant for testing and feedback. It is not the final public relea
 - Limit calls to existing conversations, allow everyone, or block all calls.
 - Block and unblock people.
 - Review signed-in devices and log out other sessions.
+- Lock Mimi with the same screen lock used by your phone. App lock asks again when the app is freshly reopened, not during normal in-app movement or an active call.
 
 ### Data And Storage
 
@@ -132,12 +142,15 @@ You can change these choices later from the **Profile** tab.
 | --- | --- |
 | Chats | Recent conversations, unread messages, pinned chats, search, and new chats |
 | Chat room | Messages, attachments, voice notes, replies, links, mentions, and message controls |
+| Personal Cloud | A private self-chat for saved messages, files, links, and notes |
 | Calls | Recent voice calls and call history controls |
 | Profile | Account details, privacy, notifications, storage, devices, help, and sign out |
 
 ## Privacy And Account Controls
 
 Mimi uses Google sign-in and device sessions to identify an account. The app stores the active session in protected device storage and lets you end other signed-in sessions from the Devices page.
+
+Passkeys are available on supported Android devices and are configured for Mimi's Android app identity. Device app lock uses the phone's own secure unlock screen, so Mimi does not learn or store your device PIN, password, pattern, fingerprint, or face unlock data.
 
 Privacy is controlled separately for your bio, profile character, last seen, online activity, and incoming calls. Blocking a person stops direct interaction between the two accounts.
 
@@ -148,7 +161,7 @@ Mimi is still in Early Access and has not been presented as a finished, independ
 Mimi uses a mobile app connected to its own cloud service.
 
 - The app handles profiles, conversations, media, notifications, and calls.
-- The backend manages accounts, sessions, user search, privacy rules, chats, message states, blocks, and call history.
+- The backend manages accounts, sessions, passkeys, user search, privacy rules, Personal Cloud chats, message states, blocks, and call history.
 - Live chat updates, presence, typing activity, and call signalling use a real-time connection.
 - Voice calls send audio directly through WebRTC where possible, with configured relay support when needed.
 - MongoDB stores account, chat, message, session, and call records.
@@ -161,9 +174,11 @@ Mimi uses a mobile app connected to its own cloud service.
 | Mobile app | Under active development |
 | Early Access download | Available in [GitHub Releases](../../releases) |
 | One-to-one chat | Available for testing |
+| Personal Cloud | Available for testing |
 | Media and voice messages | Available for testing |
 | Voice calls | Available for testing |
 | Notifications | Available for testing |
+| Passkeys and app lock | Available for testing on supported devices |
 | Web version | Planned after the mobile app and its connected services are ready |
 
 Features may be added, removed, renamed, or rebuilt during Early Access.
