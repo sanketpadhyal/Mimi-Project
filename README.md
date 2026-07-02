@@ -5,6 +5,7 @@
 
 <p align="center">
   A simple place to talk, share, and stay close.
+  Web version development will start after completion of application.
 </p>
 
 <p align="center">
